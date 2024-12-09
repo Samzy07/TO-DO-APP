@@ -40,7 +40,7 @@ function updateTask(){
     ulEl.innerHTML = ""
     inputEl.value = ""
        
-    arrList.map(taskId => {
+    arrList.map((taskName,taskId,status) => {
         
 
         // Updating Status of Items
