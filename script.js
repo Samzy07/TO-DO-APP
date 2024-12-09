@@ -10,11 +10,7 @@ let arrList = JSON.parse(localStorage.getItem("todoTask"))
 updateTask()
 
 
-if (!arrList) {
-
-     arrList = []
-
-}
+arrList = []
 
 
 addTaskBtn.addEventListener('click', function(e){
@@ -40,7 +36,7 @@ function updateTask(){
     ulEl.innerHTML = ""
     inputEl.value = ""
        
-    arrList.map((taskName,taskId,status) => {
+    arrList.map(function (taskName, taskId) {
         
 
         // Updating Status of Items
