@@ -115,7 +115,7 @@ function updateTask(){
 
     localStorage.setItem("todoTask", JSON.stringify(arrList))
 
-})
+});
 
 }
 
