@@ -36,7 +36,7 @@ function updateTask(){
     ulEl.innerHTML = ""
     inputEl.value = ""
        
-    arrList.map(function (taskName, taskId) {
+     for (let taskId = 0; taskId < arrList.length; taskId++) {
         
 
         // Updating Status of Items
@@ -115,7 +115,7 @@ function updateTask(){
 
     localStorage.setItem("todoTask", JSON.stringify(arrList))
 
-});
+}
 
 }
 
