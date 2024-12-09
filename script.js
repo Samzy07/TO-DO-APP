@@ -20,7 +20,7 @@ if (!arrList) {
 addTaskBtn.addEventListener('click', function(e){
    e.preventDefault()
    let objTask = {
-        taskId: arrList.length + 1,
+        taskId: arrList.length,
         taskName: inputEl.value,
         status: "pending"
    }
