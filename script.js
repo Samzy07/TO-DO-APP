@@ -6,11 +6,8 @@ let btnDiv = document.getElementById("btn-box")
 btnDiv.addEventListener('click', btnTodo)
 
 // geting Item-List back to array
-let arrList = JSON.parse(localStorage.getItem("todoTask"))
+let arrList = JSON.parse(localStorage.getItem("todoTask")) || [];
 updateTask()
-
-
-arrList = []
 
 
 addTaskBtn.addEventListener('click', function(e){
