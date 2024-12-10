@@ -16,7 +16,7 @@ arrList = []
 addTaskBtn.addEventListener('click', function(e){
    e.preventDefault()
    let objTask = {
-        taskId: arrList.length,
+        taskId: arrList.length + 1,
         taskName: inputEl.value,
         status: "pending"
    }
@@ -36,7 +36,7 @@ function updateTask(){
     ulEl.innerHTML = ""
     inputEl.value = ""
        
-     for (let taskId = 0; taskId < arrList.length; taskId++) {
+     for (let taskId = 1; taskId < arrList.length; taskId++) {
         
 
         // Updating Status of Items
