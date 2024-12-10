@@ -11,7 +11,9 @@ updateTask()
 
 
 addTaskBtn.addEventListener('click', function(e){
-   e.preventDefault()
+    if (!inputEl.value) {
+        return
+    } else {
    let objTask = {
         taskId: arrList.length + 1,
         taskName: inputEl.value,
@@ -23,6 +25,8 @@ addTaskBtn.addEventListener('click', function(e){
     //  saving Item-List to LocalStorage
      localStorage.setItem("todoTask", JSON.stringify(arrList))
      updateTask()
+
+}
 
 })
 
